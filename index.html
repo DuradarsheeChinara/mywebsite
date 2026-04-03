@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duradarshee Chinara - Portfolio</title>
+    <style>
+        /* General Body Styling: Dark background, light text, simple font */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* Centers everything */
+            line-height: 1.6;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* Main Container for spacing */
+        .container {
+            max-width: 800px;
+            /* Keeps the content from stretching too wide */
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Typography */
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(270deg, #00f2fe, #4facfe, #f093fb, #f5576c);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeUp 0.8s ease forwards, gradientShift 8s ease infinite;
+            filter: drop-shadow(0 0 15px rgba(79, 172, 254, 0.4));
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        /* Sections for spacing between different parts */
+        section {
+            margin-bottom: 60px;
+            padding: 40px 30px;
+            background-color: #1a1a1a;
+            /* Slightly lighter dark color to make sections pop */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        /* Staggered animation delays for sections */
+        section:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        section:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        section:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        section:nth-child(5) {
+            animation-delay: 0.8s;
+        }
+
+        section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
+            border-bottom: 2px solid #555;
+        }
+
+        section:hover h2 {
+            color: #ffffff;
+            border-bottom-color: #888;
+        }
+
+        /* Top Header specifically */
+        header {
+            margin-bottom: 60px;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        /* Media (Images and Video) Styling */
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto 20px auto;
+            display: block;
+            border: 1px solid #333;
+            background-color: #2a2a2a;
+            /* Fallback color so it's visible if the image/video file is missing */
+            min-height: 250px;
+            /* Ensures the box is visible even without the file present */
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        img:hover,
+        video:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ==========================================
+             1. Top Section
+        =========================================== -->
+        <header>
+            <h1>Duradarshee Chinara</h1>
+            <p>
+                Hello, I’m Duradarshee Chinara, a B.Tech CSE student who believes communication is as powerful as code.
+                My journey through hackathons and leading the Google Developers Group club has shaped my ability to
+                connect ideas with people. This portfolio brings together my thoughts, creativity, and expression
+                through writing, visuals, and video.
+            </p>
+        </header>
+
+        <!-- ==========================================
+             2. Section: Essay (Written)
+        =========================================== -->
+        <section>
+            <h2>Essay (Written)</h2>
+            <!-- Just change "collage.jpg" to the actual name of your essay image -->
+            <img src="WhatsApp Image 2026-03-31 at 11.33.45 PM.jpeg" alt="Essay Image">
+        </section>
+
+        <!-- ==========================================
+             3. Section: Collage (Visual)
+        =========================================== -->
+        <section>
+            <h2>Collage (Visual)</h2>
+            <!-- Just change "collage.jpg" to the actual name of your collage image -->
+            <img src="WhatsApp Image 2026-03-31 at 11.17.30 PM.jpeg" alt="Collage Image">
+            <p>
+                The visual piece depicts some basic elements of business communication and a case application. It
+                demonstrates how a lack of communication (e.g. instructions that are vague, responsibilities that are
+                unclear, deadlines that are absent) can lead to an increased risk of loss and how clear communication,
+                on the other hand, can boost the company’s profitability, and morale. Also, the case pertaining to the
+                email and the solution that was revised are testament, once again, to the case of the unclear email and
+                the rewritten revised case and the revised case to the case to case emails of...
+                This piece is geared towards students, novice professionals, and communication faculty who are at the
+                primary/secondary school teaching level or at the business schools at the graduate level of
+                communication. It applies to a greater extent than any other communication theory, the principles of
+                communication, and the other five structured theories of communication, to the extent of the five
+                communication theories, at least, especially to the five communication theories of communication...
+                Additionally, the image str powerful to reinforce the direct communication theme, and to reinforce the
+                other centers of the five communication centers regarding the principles of: state the main point of the
+                communication, state the communication goal, state the communication problem, and state the
+                communication solution. All these reflect a high level of use of the basic and advanced communication
+                theories. This visual communication piece puts a high premium on the communication component of
+                comprehensive leadership, teamwork, management, and communication within the organization.
+
+            </p>
+        </section>
+
+        <!-- ==========================================
+             4. Section: Video Entry (Oral/Aural)
+        =========================================== -->
+        <section>
+            <h2>Video Entry (Oral/Aural)</h2>
+            <!-- Make sure your video is in the same folder and named "video.mp4" -->
+            <video controls>
+                <source src="Recording 2026-04-01 202605.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                This oral/aural presentation delves into deeper aspects of my work. Replace this caption with details
+                about what the viewer will see and hear in the video.
+            </p>
+        </section>
+
+        <!-- ==========================================
+             5. Section: AI Disclosure
+        =========================================== -->
+        <section>
+            <h2>AI Disclosure</h2>
+            <p>
+                This portfolio is an original work, with all ideas and content developed independently. Limited use of AI
+                tools was involved in refining grammatical structure and enhancing clarity in the written section, as well
+                as in supporting ideation and minor edits for the visual component. These tools were used solely to improve
+                presentation, while maintaining the authenticity of the work.
+            </p>
+        </section>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const paragraphs = document.querySelectorAll('header p, section p');
+            
+            const typeWriter = (element, text) => {
+                let i = 0;
+                element.innerHTML = ''; 
+                const cursor = document.createElement('span');
+                cursor.style.borderRight = '2px solid #5facfe';
+                cursor.style.animation = 'blink 0.7s infinite';
+                cursor.style.marginLeft = '2px';
+                
+                const textNode = document.createTextNode('');
+                element.appendChild(textNode);
+                element.appendChild(cursor);
+
+                const speed = 19; // Increased delay to make typing 25% slower
+                const charsPerTick = Math.max(1, Math.floor(text.length / 150));
+
+                function type() {
+                    if (i < text.length) {
+                        textNode.nodeValue += text.substring(i, i + charsPerTick);
+                        i += charsPerTick;
+                        setTimeout(type, speed);
+                    } else {
+                        cursor.style.display = 'none';
+                    }
+                }
+                setTimeout(type, 300);
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const p = entry.target;
+                        const originalText = p.getAttribute('data-text');
+                        const visibleSpan = p.querySelector('.visible-text');
+                        if (visibleSpan && originalText) {
+                            typeWriter(visibleSpan, originalText);
+                        }
+                        observer.unobserve(p);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            paragraphs.forEach(p => {
+                const text = p.textContent.replace(/\s+/g, ' ').trim();
+                if (!text) return;
+                
+                p.setAttribute('data-text', text);
+                
+                const originalHtml = p.innerHTML;
+                p.innerHTML = `<span style="visibility: hidden;">${originalHtml}</span><span class="visible-text" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></span>`;
+                p.style.position = 'relative';
+                
+                observer.observe(p);
+            });
+        });
+    </script>
+</body>
+
+</html>
